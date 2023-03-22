@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts-config PUBLIC
+       "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+       "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+       
+<struts-config>
+
+	<form-beans>
+		<form-bean name="pessoaForm" type="br.com.agendaweb.form.PessoaForm"/>
+	</form-beans>
+	
+	<action-mappings>
+		<action path="/cadastroPessoa" name="pessoaForm"
+				type="br.com.agendaweb.action.PessoaAction">
+			<forward name="success" path="/cadastroPessoa.jsp"/>
+		</action>
+	</action-mappings>
+</struts-config>
